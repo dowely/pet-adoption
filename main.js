@@ -56,7 +56,7 @@ document.querySelectorAll(".pet-filter button").forEach((el, index, arr) => {
 
     document.querySelectorAll(".pet-card").forEach((el) => {
       if (currentFilter === el.dataset.species || currentFilter === "all") {
-        el.style.display = "grid"
+        el.style.removeProperty("display")
       } else {
         el.style.display = "none"
       }
